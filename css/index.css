@@ -173,7 +173,8 @@ p {
 }
 body {
   background-color: #fff3e0;
-  max-width: 1390px;
+  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
 }
 .container {
