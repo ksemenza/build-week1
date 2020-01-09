@@ -1,0 +1,142 @@
+
+/*SECTION ELEMENT SEPERATES*/
+.aboutWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+    padding: 4.8rem;
+}
+/*SECTION ELEMENT SEPERATES*/
+
+
+/*WRAPS SINGLE ENTIRE PROFILE*/
+.profileWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+
+    @media @tablet {
+        max-width: 325px;
+    }
+   
+    @media @phone {
+        margin-bottom: 2.4rem;
+      padding: 3.2rem;
+      max-width: 475px; 
+    }//end phone profileWrap
+}//end profileWrap
+
+/*WRAPS IMG AND CONTACTS*/
+.profileImgContactWrap {
+
+
+}//end profileImgContacWrap
+
+/*WRAPS ALL PROFILES CONTACTS*/
+.contactWrapAll {
+    display: flex;
+    align-items: center;
+}//end contactWrapAll
+
+/*WRAPS SINGLE CONTACT TYPE AND INFO*/
+.contactWrap {
+    margin-left: 3.2rem;
+    font-size: 1.8rem;
+    padding: 1.8rem;
+
+    @media @tablet {
+        max-width: 350px;
+        margin-left: 1.1rem;
+    }//end tablet contactWrap
+    
+    @media @phone {
+        max-width: 450px;
+
+        margin-left: 1.4rem;
+        padding: 1.2rem;
+    }//end phone contactWrap
+}//end contactWrap
+
+/*WRAPS TWO ENTIRE PROFILES TOGETHER*/
+.profileWrap2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4.5rem;
+
+    @media @tablet {
+        max-width: 750px;
+    }
+    @media @phone {
+flex-direction: column;
+    }
+}
+
+/****  CLASSES ****/
+
+
+.profileTitle {
+    font-size: 3.2rem;
+    font-weight: 900;
+
+    @media @tablet {
+        font-size: 2.4rem;
+    }//end tablet profileTitle
+}
+
+.profileName {
+    font-size: 24px;
+    padding: @pProfileTxt;
+
+    @media @tablet {
+        font-size: 1.8rem;
+        padding: 2.1rem;
+    }//end tablet profileName
+
+    @media @phone {
+        padding: 1.8rem;
+    }//end phone profileName
+}
+
+.profileImg {
+    width: 126px;
+    height: 126px;
+    border-radius: 125px;
+    margin-left: 35%;
+}//end profileImg
+
+
+.contactIcon{
+    width: @contactIconDim;
+    height:@contactIconDim;
+
+    @media @tablet {
+       width:@contactIconDimPhone;
+       height:@contactIconDimPhone;
+    }// end tablet contactIcon
+}// end contactIcon
+
+.contactType{
+    font-size: 2.1rem;
+    font-weight: 900;
+    margin-bottom: 8px;
+}//end contactType
+
+.contactInfo{
+    font-size: 1.8rem;
+    @media @tablet {
+        font-size: 1.4rem;
+    }//end tablet contactInfo
+}//end contactInfo
+
+.specialThanks{
+    text-align: center;
+  font-size: .9rem;
+}//end specialThanks
+
+/*** ELEMENTS ***/
+p{
+    font-size: 1.2rem;
+}

@@ -1,0 +1,73 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    max-width: 100%;
+    background-color:@hBgColor;
+    .hTopBorderRadius();
+    border-bottom: 2px groove @dark-teal;
+    justify-content: space-between;
+
+    @media @tablet {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .logoCompanyNameWrap {
+        margin-left: @mHeaderLogo;
+        display: flex;
+        align-items: center;
+            @media @tablet {
+            width:100%;
+            margin-bottom: -3%;
+}
+
+.companyName {
+   .hCoNameStyle();
+ 
+}//end companyName
+
+    }//end logoCompanyName
+.headerLinkWrap {
+margin-right:@mWindowBorder;
+    }//end headerLinks
+    #myPassport {
+        margin-right: @mHeaderPassLinkLeft;
+
+        @media @tablet {
+            display: none;
+
+        }
+    }
+    #logIn {
+
+   
+        @media @tablet {
+            color:@dark-orange;
+            font-weight: 700;
+        }
+        @media @phone {
+            color:@charcoal-black;
+        }
+    }//end of logIn
+}//end header
+//header nav anchor style
+
+a {
+    text-decoration: none;
+}
+.navAnchor {
+  .navLinkStyle();
+
+  &:hover{
+      .glow();
+  }
+
+  &:active{
+      .glowT();
+  }
+
+}
+
+
+

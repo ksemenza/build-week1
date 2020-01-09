@@ -1,0 +1,40 @@
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        background-color: @primary-teal;
+        border-top: 2px groove @primary-orange;
+            .bttmNavWrap {
+                display: flex;
+                justify-content: space-evenly;             
+                padding: 2.2rem;
+
+            
+            
+            }
+            .copyright {
+                display: flex;
+                justify-content: center;
+                padding: 1.0rem;
+                font-size: 1.6rem;
+                background-color: @dark-teal;
+                border-top: 2px groove @primary-teal;
+                color: @primary-orange;
+                
+                @media @phone {
+                    color: @charcoal-black;
+                }
+              
+            }
+    }
+
+#bttmNavHome, #bttmNavAbout, #bttmNavContact, #bttmNavLogIn{
+    @media @phone {
+        font-size: 2.1rem;
+        color: @charcoal-black;
+    }
+}
+
+.imgCredit{
+    font-size: 1.3rem;
+}

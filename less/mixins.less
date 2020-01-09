@@ -1,0 +1,161 @@
+
+//Global Mixins
+.bgImgCover {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-width: 100%;
+}
+
+.hTopBorderRadius{
+    border-top-left-radius: @borderRadius;
+    border-top-right-radius: @borderRadius;
+}
+
+.txtEngraveFx {
+    text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+}
+
+/*HEADER MIXINS*/
+//header company name style
+.hCoNameStyle{
+    font-family:@hCoNameFontFam;
+    color:@hCoNameColor;
+    font-size: @headerLgSz;
+    font-weight: 900;
+   .txtEngraveFx();
+
+   &:hover {
+       .glow();
+
+   }
+
+   &:active{
+       .glowT();
+   }
+
+   @media @tablet {
+    font-size: 3.6rem;
+    width: 100%;
+    margin-left: 25%;
+    margin-top: -2%;
+
+}
+  @media @phoneRespHeroBtn {
+      font-size: 2.8rem;
+      margin-left: 5%;
+
+      &:focus{
+          border: 1px solid @dark-orange;
+      }
+
+  }
+}
+//header nav link style
+.navLinkStyle{
+    text-decoration: none;
+    color:@hNavAnchorsColor;
+    font-family:@hNavFontFam;
+    font-size:@hNavSz;
+    .txtEngraveFx();
+    @media @tablet {
+        font-size: 2.5rem;
+    }
+
+}
+
+/*HERO MIXINS*/
+
+.hHeroTxtStyle {
+    font-family: @hHeroTxtFam;
+    // color: @hHeroTxtColor;
+    font-weight: 400;
+    letter-spacing: -1px;
+
+    @media @tablet {
+        font-size: 3.6rem;
+    }
+    @media @phone {
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+}
+
+/*TOP SECTION MIXINS*/
+.imgWrapPosRow3 {
+    display: flex;
+    justify-content:  center;
+    margin-top: 5%;
+max-width:100%;
+border-top-left-radius: @borderRadius;    
+border-top-right-radius: @borderRadius;    
+border-bottom: none;
+}
+.imgResize {
+    height:15%;
+    width: 25%;
+}
+.topTxtWrapStyle {
+display: flex;
+margin-left: 6.5%;
+margin-right: 6.5%;
+
+}
+
+.txtTopStyle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    padding-top:@pTxtRow3Hgt;
+    padding-bottom: @pTxtRow3Hgt;
+    margin-top: 3%;
+
+    background-color:@off-white;
+    text-align: center;
+
+    border: 3px solid #37474f;
+  border-radius:7px;
+}
+
+.rowWrap3 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.pTxtRow3 {
+    padding-left: @pTxtRow3;
+    padding-right: @pTxtRow3;
+}
+
+.contentShadow {
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.btnStyle{
+    width: 170px;
+    height: 50px;
+    margin: 3.2rem;
+    font-size: 1.8rem;
+    font-family: @bree-font;
+    border: 3px solid @primary-teal;
+    background-color: @off-white;
+    color: @dark-teal;
+    border-radius: 5px;
+}
+
+.btnHover {
+    //form file special-fx
+  .btnShadow();
+  background-color: @primary-teal;
+  border: 2px inset @primary-orange;
+  color:@primary-orange;
+  font-weight: 400;
+  font-size: 2.1rem;
+  letter-spacing: 1.25px;
+}
+
