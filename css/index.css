@@ -189,6 +189,18 @@ body {
   border-radius: 5px;
   border: 1px groove #eeeeee;
 }
+@media (max-width: 800px) {
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
 .border {
   border: 1px solid red;
 }

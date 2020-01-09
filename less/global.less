@@ -68,12 +68,22 @@
   @pTabletRtLt:3.6rem;
 
   .container{
-  max-width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     background-color: @white;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     border-radius: @borderRadius;
     border: 1px groove @groove-white;
+
+    @media @tablet {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    @media @phone {
+      max-width: 500px;
+      margin: 0 auto;
+    }
   
   }
 
