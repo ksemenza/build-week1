@@ -12,12 +12,19 @@ header {
         justify-content: space-between;
     }//end tablet header
 
+    @media @phone {
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-image: url(/src/img/logo/android-chrome-512x512.png);
+        background-repeat: no-repeat;
+        background-position: 50% 20%;
+    }
+ 
     //WRAP COMPANY NAME AND LOGO
     .logoCompanyNameWrap {
         margin-left: @mHeaderLogo;
         display: flex;
         align-items: center;
-
 .logoImg {
     width: @logoSize80px;
     height: @logoSize80px;
@@ -26,6 +33,7 @@ header {
    .hCoNameStyle();
 }//end companyName
     }//end logoCompanyName
+
 
 
 
@@ -75,6 +83,10 @@ a {
       .glowT();
   }
 
+}
+
+a .logoImg {
+    display: none;
 }
 
 
