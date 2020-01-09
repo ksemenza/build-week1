@@ -34,18 +34,14 @@
    &:active{
        .glowT();
    }
-
    @media @tablet {
-    font-size: 2.6rem;
-    width: 100%;
+    font-size: 2.4rem;
 
-
-}
-  @media @phoneRespHeroBtn {
-      font-size: 1.8rem;
-      margin-left: 5%;
-
-      &:focus{
+}//end tablet company name
+  @media @phone {
+      margin-left: auto;
+      font-size: 2.4rem;
+           &:focus{
           border: 1px solid @dark-orange;
       }
 
@@ -66,17 +62,18 @@
 
 /*HERO MIXINS*/
 
-.hHeroTxtStyle {
+.hHeroHeaderTxtStyle {
     font-family: @hHeroTxtFam;
     // color: @hHeroTxtColor;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: -1px;
+    font-size: 3.2rem;
 
     @media @tablet {
-        font-size: 3.6rem;
+        font-size: 2.4rem;
     }
     @media @phone {
-        font-size: 2.4rem;
+        font-size: 1.8rem;
         font-weight: 600;
     }
 }
