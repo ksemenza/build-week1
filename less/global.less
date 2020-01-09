@@ -1,6 +1,7 @@
 // General Styles
 * {
     box-sizing: border-box;
+    .border();
   
   }
   
@@ -53,17 +54,6 @@
   body{
     background-color: #fff3e0;
     width: 100%;
-
-    margin: 0 auto;
-
-    @media @tablet {
-      margin: 0 auto;
-    }
-
-    @media @phone {
-
-      
-    }
   }
   @pTabletRtLt:3.6rem;
 
@@ -75,15 +65,7 @@
     border-radius: @borderRadius;
     border: 1px groove @groove-white;
 
-    @media @tablet {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    @media @phone {
-      max-width: 500px;
-      margin: 0 auto;
-    }
+  
   
   }
 
