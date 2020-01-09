@@ -346,8 +346,13 @@ body {
   background-size: cover;
   max-width: 100%;
   width: 100%;
-  height: 400px;
+  height: 600px;
   padding: 3.6rem;
+}
+@media (max-width: 500px) {
+  .heroImgWrap {
+    height: 455px;
+  }
 }
 .heroImgWrap .heroHeader {
   font-family: 'Stoke', serif;
@@ -367,10 +372,11 @@ body {
   }
 }
 .heroImgWrap .heroTxt {
-  width: 85%;
-  line-height: 2.5rem;
+  width: 95%;
+  line-height: 3.5rem;
   margin-top: 1.5rem;
-  font-size: 1.6rem;
+  font-size: 2.1rem;
+  padding: 3.2rem;
 }
 @media (max-width: 800px) {
   .heroImgWrap .heroTxt {
@@ -379,6 +385,7 @@ body {
 }
 @media (max-width: 500px) {
   .heroImgWrap .heroTxt {
+    padding: 2.4rem;
     line-height: 3.2rem;
     font-size: 1.2rem;
   }
@@ -509,7 +516,6 @@ body {
   border: 1px solid #37474f;
   border-bottom: none;
   padding-top: 5%;
-  font-size: 4.2;
 }
 #innerTxt2 {
   border: 1px solid #37474f;
