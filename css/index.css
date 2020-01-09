@@ -174,18 +174,11 @@ p {
 body {
   background-color: #fff3e0;
   width: 100%;
-  max-width: 1400px;
   margin: 0 auto;
 }
 @media (max-width: 800px) {
   body {
     margin: 0 auto;
-  }
-}
-@media (max-width: 500px) {
-  body {
-    margin: 0 auto;
-    max-width: 800px;
   }
 }
 .container {
